@@ -15,15 +15,58 @@ h1.index
     font-family: 'Montserrat', sans-serif;
   
 }
-ul > li
+p.side
 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     border-bottom: solid gray 1px;
 }
-ul
+p.side2
 {
-    margin: 0;
-    padding: 0;
+    border-bottom: none;
+}
+
+
+@media screen and (min-width: 600px)
+{
+    nav
+    {
+        display: flex;
+        justify-content: center;
+    }
+    nav > p
+    {
+        margin: 0 20px;
+    }
+   section.course,.last_course
+    {
+        display: grid;
+        grid-template-columns: 4fr 8fr;
+    }
+    .left_side
+    {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    p.left_side
+    {
+        padding: 20px 0;
+    }
+    p.side, p.side2
+    {
+        margin-top: 0;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        border-bottom: none;
+    }
+    section.course 
+    {
+        border-bottom: solid gray 1px;
+        margin-bottom: 10px;
+    }
+    .last_course
+    {
+        border-bottom: none;
+    }
+
+    
+
 }
