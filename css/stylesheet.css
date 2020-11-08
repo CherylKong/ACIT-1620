@@ -1,4 +1,17 @@
-body 
+  
+body
 {
     background-color: beige
+}
+
+nav
+{
+    background-color: lightblue;
+    text-align: center;
+}
+
+h1.index
+{
+    font-family: 'Montserrat', sans-serif;
+  
 }
