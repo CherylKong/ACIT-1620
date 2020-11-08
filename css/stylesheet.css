@@ -19,11 +19,6 @@ p.side
 {
     border-bottom: solid gray 1px;
 }
-p.side2
-{
-    border-bottom: none;
-}
-
 
 @media screen and (min-width: 600px)
 {
@@ -39,16 +34,12 @@ p.side2
    section.course,.last_course
     {
         display: grid;
-        grid-template-columns: 4fr 8fr;
+        grid-template-columns: 6fr 10fr;
     }
     .left_side
     {
         grid-column: 1/2;
         grid-row: 1/2;
-    }
-    p.left_side
-    {
-        padding: 20px 0;
     }
     p.side, p.side2
     {
@@ -57,6 +48,11 @@ p.side2
         grid-row: 1/2;
         border-bottom: none;
     }
+    p.left_side
+    {
+        padding: 30px 0;
+    }
+    
     section.course 
     {
         border-bottom: solid gray 1px;
@@ -66,7 +62,4 @@ p.side2
     {
         border-bottom: none;
     }
-
-    
-
 }
