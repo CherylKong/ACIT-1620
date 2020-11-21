@@ -18,7 +18,12 @@ let courselist = [course1, course2, course3];
 let num;
 do
 {
-    num  = prompt("Enter 4-digit number: ")  
+  num  = prompt("Enter 4-digit number: ")
+  while (num.length != 4)
+  {
+    num  = prompt("Enter 4-digit number: ")
+  }
+    
 }
 while (!Number(num))
 

@@ -1,7 +1,4 @@
-<<<<<<< HEAD
   
-=======
->>>>>>> d88a87698c3c9c92cccee823137daab106ce2544
 body
 {
     background-color: beige
@@ -17,7 +14,6 @@ h1.index
 {
     font-family: 'Montserrat', sans-serif;
   
-<<<<<<< HEAD
 }
 p.side
 {
@@ -35,11 +31,15 @@ p.side
     {
         margin: 0 20px;
     }
-   section.course,.last_course
-    {
+    section {
         display: grid;
         grid-template-columns: 6fr 10fr;
-    }
+        border-bottom: solid gray 1px;
+        margin-bottom: 10px;
+        }
+    .last_course {
+        border-bottom: none;
+        }
     .left_side
     {
         grid-column: 1/2;
@@ -56,16 +56,4 @@ p.side
     {
         padding: 30px 0;
     }
-    
-    section.course 
-    {
-        border-bottom: solid gray 1px;
-        margin-bottom: 10px;
-    }
-    .last_course
-    {
-        border-bottom: none;
-    }
-=======
->>>>>>> d88a87698c3c9c92cccee823137daab106ce2544
 }
