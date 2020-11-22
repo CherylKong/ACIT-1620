@@ -15,32 +15,54 @@ let course3 = {
  
 let courselist = [course1, course2, course3];
 
-let num;
-do
-{
-  num  = prompt("Enter 4-digit number: ")
-  while (num.length != 4)
-  {
-    num  = prompt("Enter 4-digit number: ")
-  }
+// let num;
+// do
+// {
+//   num  = prompt("Enter 4-digit number: ")
+//   while (num.length != 4)
+//   {
+//     num  = prompt("Enter 4-digit number: ")
+//   }
     
+// }
+// while (!Number(num))
+
+// let b = 'False'
+// for (let x of courselist)
+//   {
+//     if(x.code.includes(num))
+//       {
+//         b='True';
+//         console.log(`Yes I am taking the course: ${x.code} - ${x.name}`);
+
+//       }
+//   }
+
+// if (b == 'False')
+//   {
+//     let new_course = {code: num, name: 'null'}
+//     courselist.push(new_course);
+//     console.log(`added a new course code: ${num}`);   
+//   }
+
+function createCourseArray()
+{
+  let course_list = []
+  code = document.querySelectorAll("a.left_side")
+  date = document.querySelectorAll("p.left_side")
+  for (let x = 0; x<code.length;x++)
+  {
+    let course;
+    course = {code: code[x].innerText, date: date[x].innerText}
+    course_list.push(course)
+  }
+  console.log(course_list)
 }
-while (!Number(num))
 
-let b = 'False'
-for (let x of courselist)
-  {
-    if(x.code.includes(num))
-      {
-        b='True';
-        console.log(`Yes I am taking the course: ${x.code} - ${x.name}`);
+// function findCourse(course_list)
+// {
 
-      }
-  }
+// }
 
-if (b == 'False')
-  {
-    let new_course = {code: num, name: 'null'}
-    courselist.push(new_course);
-    console.log(`added a new course code: ${num}`);   
-  }
+createCourseArray()
+// findCourse(course_list)
