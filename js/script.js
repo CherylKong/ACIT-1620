@@ -51,27 +51,33 @@ function findCourse(course_list) {
       y.style.backgroundColor = 'green'
     }
   }
-  if(valid === 'false') 
-  {
-    let all_course =document.querySelector('main')
+  if (valid === 'false') {
+    let all_course = document.querySelector('main')
     let new_course = document.createElement("section")
+    //create 3 paragraph element
     let new_para = document.createElement("p")
     let new_para1 = document.createElement("p")
     let new_para2 = document.createElement("p")
+    //create new course element: the given number as code, N/A as description 
+    //and fall 2020 as date
     let new_code = document.createTextNode(num)
     let new_date = document.createTextNode('Fall 2020')
     let new_descp = document.createTextNode('N/A')
+    //append the text to paragraph
     new_para.appendChild(new_code)
     new_para1.appendChild(new_descp)
     new_para2.appendChild(new_date)
+    //append the paragraph to new course, set the new course to have
+    // class last_course and append the document
     new_course.appendChild(new_para)
     new_course.appendChild(new_para1)
     new_course.appendChild(new_para2)
-    new_course.setAttribute("class","last_course")
+    new_course.setAttribute("class", "last_course")
     all_course.appendChild(new_course)
+    // add a border line to the second last course
     let last_course = document.querySelector(".last_course")
-    last_course.style.borderBottom='solid gray 1px'
-    
+    last_course.style.borderBottom = 'solid gray 1px'
+
   }
 }
 
