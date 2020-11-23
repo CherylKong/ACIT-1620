@@ -55,15 +55,22 @@ function findCourse(course_list) {
   {
     let all_course =document.querySelector('main')
     let new_course = document.createElement("section")
+    let new_para = document.createElement("p")
+    let new_para1 = document.createElement("p")
+    let new_para2 = document.createElement("p")
     let new_code = document.createTextNode(num)
     let new_date = document.createTextNode('Fall 2020')
     let new_descp = document.createTextNode('N/A')
-    new_course.appendChild(new_code)
-    new_course.appendChild(new_date)
-    new_course.appendChild(new_descp)
+    new_para.appendChild(new_code)
+    new_para1.appendChild(new_descp)
+    new_para2.appendChild(new_date)
+    new_course.appendChild(new_para)
+    new_course.appendChild(new_para1)
+    new_course.appendChild(new_para2)
     new_course.setAttribute("class","last_course")
-    
     all_course.appendChild(new_course)
+    let last_course = document.querySelector(".last_course")
+    last_course.style.borderBottom='solid gray 1px'
     
   }
 }
